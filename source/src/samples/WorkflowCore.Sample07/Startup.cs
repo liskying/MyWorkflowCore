@@ -29,7 +29,7 @@ namespace WorkflowCore.Sample07
             //start the workflow host
             var host = app.ApplicationServices.GetService<IWorkflowHost>();
             host.RegisterWorkflow<Sample03.PassingDataWorkflow, Sample03.MyDataClass>();
-            host.RegisterWorkflow<Sample04.EventSampleWorkflow, Sample04.MyDataClass>();            
+            host.RegisterWorkflow<Sample04.EventSampleWorkflow, Sample04.MyDataClass>();
             host.Start();
 
             if (env.IsDevelopment())
